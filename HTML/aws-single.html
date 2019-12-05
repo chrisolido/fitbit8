@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
-	<title>Linux Template</title>
+	<title>AWS Template</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="Fitbit8 BrainChild Blog Template">
 	<meta name="keywords" content="Automation, Fitbit8, Devops Ideas, Blog, html">
@@ -78,10 +78,10 @@
 	<!-- Page top section -->
 	<section class="page-top-section set-bg" data-setbg="img/page-top-bg/1.jpg">
 		<div class="page-info">
-			<h2>Linux</h2>
+			<h2>AWS</h2>
 			<div class="site-breadcrumb">
-				<a href="">Home</a>  /
-				<span>Linux</span>
+				<a href="home.html">Home</a>  /
+				<span>AWS</span>
 			</div>
 		</div>
 	</section>
@@ -92,7 +92,7 @@
 	<section class="games-single-page">
 		<div class="container">
 			<div class="game-single-preview">
-				<img src="img/devops/linux.jpg" alt="">
+				<img src="img/devops/aws.jpg" alt="">
 			</div>
 			<div class="row">
 				<div class="col-xl-9 col-lg-8 col-md-7 game-single-content">
@@ -100,20 +100,54 @@
 					<h2 class="gs-title">Amazon reinvent the world of IT</h2>
 					<p>AWS services has grown and introduce EC2 , ELB, S3 and other services in the cloud.</p>
 					<ul class="gs-meta">
-					<p>Cloud computing with AWS, Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud platform, offering over 175 fully featured services from data centers globally. Millions of customers—including the fastest-growing startups, largest enterprises, and leading government agencies—are using AWS to lower costs, become more agile, and innovate faster.</p>
+					<h4>Amazon Cloud Services</h4>
+					<p>Cloud computing with AWS, Amazon Web Services (AWS) is the world’s most comprehensive and broadly adopted cloud platform, offering over 175 fully featured services from data centers globally. 
+					Millions of customers—including the fastest-growing startups, largest enterprises, and leading government agencies—are using AWS to lower costs, become more agile, and innovate faster.</p>
 					
-					<h4>AWS Service References</h4>
+					<h4>AWS Tips and Tricks</h4>
+					<p>Amazon Web Services is one of the most popular cloud infrastructures on the market for a reason. Over the years, AWS has created a platform with a comprehensive set of tools and infrastructure that supports some of the best apps and services as well as consistently delivering new services and features every year. The ecosystem is also flexible enough to accommodate everything from a static website to a resource-intensive set of microservices.
+					AWS has grown substantially since inception. It now has more than 400 products, tools, and services in its environment. You can benefit from features like data warehousing with Amazon Redshift, mobile and web data management through AWS AppSync, plus app migration using AWS Migration Hub and global content distribution with Amazon CloudFront to name a few. On top of that, there are many third-party tools and services that collaborate well with AWS, adding even more features to benefit from.
+					In this article, we are going to focus on the tools, tips, and tricks that can help you make the most out of your AWS cloud services platform. So, let’s get started, shall we?
+					<br><br/>
+					<br><br/>
+					<h4>Set A Billing Limit</h4>
+					Cost management is the first challenge we will tackle in this article. AWS incorporates a flexible pricing mechanism that charges you for the resources you use (and only for those resources you use) by the hour. While this is a great way to keep the entire cloud infrastructure cost-effective, it also poses a challenge.
+					You don’t always know how much you have to pay for the resources you use, especially when you are also making changes to the environment along the way. The use of EBS storage, for example, is calculated based on the storage you use, which means new files and other changes that consume storage will alter the cost of using AWS.
+					There is a simple workaround to this issue. You can actually set a budget—a billing limit—for resources on your AWS account and set up notification alerts via email when that limit is reached. There is a free tier alarm that you can access through AWS’s billing page if you’re just getting started on AWS.
+					<br><br/>
+					<br><br/>
+					<br><br/>
+					<h4>Automate</h4>
+					The flexibility offered by AWS is both beneficial in its comprehensiveness but limiting until you get used to it. Unless you know your way around the AWS ecosystem, configuring new instances and using the right services are complex tasks to complete the first time around. But the interface is highly intuitive and lends itself quickly to familiarity once you get the hang of it.
+					Some third-party tools are designed to simplify the whole AWS setup and infrastructure provisioning process if that’s your bag. With the help of infrastructure as code or IaC tools such as Chef and Terraform, you can take advantage of the Amazon cloud environment without jumping through hoops.
+					With Terraform, in particular, it is even possible to automate certain things. The tool supports the automatic scaling of groups through aws_autoscaling_group command. You can use zones for specific purposes and even integrate Terraform with AWS CloudFormation for more seamless automation. Check out more on this in our Top 7 Infrastructure as Code Tools article.
+					<br><br/>
+					<br><br/>
+					<br><br/>
+					<h4>Real-Time Insights</h4>
+					Business intelligence is an essential part of modern solutions. In order to gain valuable insights from users of your apps or services, you need to set up a comprehensive monitoring and a sufficient data analysis routine to back it up. Amazon clearly understands this need and offers Amazon QuickSight as a solution.
+					QuickSight is not only easy to integrate with web services and apps, but also very comprehensive. It also features a pay-per-session pricing structure for better cost-efficiency; you only pay for your use of its dashboards and reports.
+					<br><br/>
+					<br><br/>
+					<br><br/>
+					<h4>Take Advantage Of CloudFront</h4>
+					Even when you don’t think you need a CDN, there are still so many reasons to use Amazon CloudFront. For starters, CloudFront has a capable (and proprietary) compression algorithm that works really well with web content storage and distribution. It optimizes AWS substantial number of globally distributed Edge Locations to cache your content and reduce latency for your users according to their location.
+					You benefit from the faster data transfer and more fluid UX thanks to this compression, but the benefit goes beyond that as well. Compressed data means you are saving on data transfer costs while benefiting from CloudFront’s seamless integration with S3.
+					<br><br/>
+					<br><br/>
+					<br><br/>
+					<h4>Leverage Your Use Of EC2</h4>
+					God monitoring can be valuable when you are trying to maintain an efficient cloud environment. Now that you have access to a wealth of monitoring tools, it is easy to review your EC2 instances and optimize them further.
+					Microservices and apps that do not consume large server resources can be consolidated into one instance. Containers don’t have to run in their own instance, plus you now have spot instances to accommodate certain needs such as testing and specific tasks.
+					<br><br/>
+					<br><br/>
+					<br><br/>
+					<h4>Watch Your S3</h4>
+					One of the main causes of inefficiency in AWS is mismanaging S3 usage. As storage, and therefore Amazon S3, is one of the main factors of cost expenditure on Amazon it actually comes with a lot of optimization tools you can use to leverage your usage to keep operating costs down, including the S3 Reduced Redundancy Storage or RRS. For non-critical data, S3 RRS is the more cost-efficient solutions.
+					You also have Glacier for better data archiving and cloud data management. The service is not only fast and reliable but also very scalable and low cost. It is designed as the lowest AWS object storage class to allow web services and apps to archive data without breaking the bank.
+					There are hundreds of tools you can use to maximize your use of AWS, far too many to cover in just one article alone. The tools, tips, and tricks we discussed in this article though will help you get started optimizing your AWS environment onto the next level.
+					</p>
 					
-					<ul>
-					<li><a href="https://linux.die.net/">Linux.die.net</li>	
-  					<li><a href="http://www.penguintutor.com/">Penguintutor.com</li>		
-  					<li><a href="https://www.tutorialspoint.com/">Tutorialspoint.com</li>
-					<li><a href="https://www.nixtutor.com/">Nixtutor.comt</li>	
-  					<li><a href="https://www.redhat.com">Redhat.com/</li>		
-  					<li><a href="https://ubuntu.com/">Ubuntu.com</li>	
-					</ul>  
-				
-
 					<div class="geme-social-share pt-5 d-flex">
 						<p>Share:</p>
 						<a href="#"><i class="fa fa-pinterest"></i></a>
@@ -160,8 +194,8 @@
 		<div class="container">
 			<div class="game-author-pic set-bg" data-setbg="img/author.jpg"></div>
 			<div class="game-author-info">
-				<h4>Written by: Michael Williams</h4>
-				<p>Vivamus volutpat nibh ac sollicitudin imperdiet. Donec scelerisque lorem sodales odio ultricies, nec rhoncus ex lobortis. Vivamus tincid-unt sit amet sem id varius. Donec elementum aliquet tortor. Curabitur justo mi, efficitur sed eros alique.</p>
+				<h4>Written by: Christopher J. Olido</h4>
+				<p>Amazon Web Services redefines the building block of Infrasructure.</p>
 			</div>
 		</div>
 	</section>
@@ -193,11 +227,11 @@
 				<img src="./img/logo.png" alt="">
 			</a>
 			<ul class="main-menu footer-menu">
-				<li><a href="">Home</a></li>
-				<li><a href="">Devops</a></li>
-				<li><a href="">Reviews</a></li>
-				<li><a href="">News</a></li>
-				<li><a href="">Contact</a></li>
+				<li><a href="home.html">Home</a></li>
+				<li><a href="devops.html">Devops</a></li>
+				<li><a href="review.html">Reviews</a></li>
+				<li><a href="blog.html">News</a></li>
+				<li><a href="contact.html">Contact</a></li>
 			</ul>
 			<div class="footer-social d-flex justify-content-center">
 				<a href="#"><i class="fa fa-pinterest"></i></a>
